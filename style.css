@@ -12,8 +12,9 @@ body {
   background-color: var(--light-color);
 }
 
-main {
-  padding: 0 2rem;
+main,
+footer {
+  padding: 1rem 3rem;
 }
 
 nav {
@@ -42,6 +43,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 h3 {
@@ -60,4 +62,50 @@ button {
   border-radius: 0.5rem;
   color: var(--light-color);
   background-color: var(--main-color);
+}
+
+section {
+  padding-top: 3rem;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio-img {
+  width: 320px;
+}
+
+.profile,
+.skills,
+.experience,
+.projects,
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+footer {
+  color: var(--light-color);
+  background-color: var(--main-color);
+}
+
+footer a {
+  color: var(--light-color);
 }
