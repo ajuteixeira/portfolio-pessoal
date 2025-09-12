@@ -15,6 +15,10 @@
   --dark-color: #fbfbfe;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box
 }
@@ -50,6 +54,7 @@ nav {
   color: var(--dark-color);
   border-bottom: 1px solid #6f7a7e1c;
   background-color: var(--light-color);
+  z-index: 10000;
 }
 
 .links {
@@ -93,7 +98,7 @@ button {
 }
 
 section {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .titles {
@@ -314,6 +319,16 @@ form textarea {
 
 form button {
   width: 80%;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--second-color);
 }
 
 footer {

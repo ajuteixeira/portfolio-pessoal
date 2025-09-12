@@ -17,16 +17,17 @@
     <nav>
       <span>Juliana_</span>
       <div class="links">
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Portfólio</a><a href="#">Contato</a>
+        <a href="#bio">Home</a>
+        <a href="#profile">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contato</a>
         <a href="#" id="theme-toggle">⏾</a>
       </div>
     </nav>
   </header>
   <main>
-    <section class="bio">
+    <section class="bio" id="bio">
       <div class="bio-info">
         <h1>Oi, eu sou a Juliana</h1>
         <h3>Dev Front-End</h3>
@@ -38,7 +39,7 @@
       </div>
       <img class="bio-img" src="assets/profile.png" alt="" srcset="" />
     </section>
-    <section class="profile">
+    <section class="profile" id="profile">
       <div class="titles">
         <h2>Sobre mim</h2>
         <span>Meu perfil</span>
@@ -65,7 +66,7 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="titles">
         <h2>Habilidades</h2>
         <span>Tecnologias que estou estudando</span>
@@ -142,7 +143,7 @@
         <button class="next carousel-arrows">&#10095;</button>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="titles">
         <h2>Contato</h2>
         <span>Me envia um email :) </span>
@@ -153,21 +154,18 @@
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
           </div>
-
           <div>
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
           </div>
-
           <div><label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea>
           </div>
-
           <button type="submit">Enviar →</button>
         </form>
       </div>
-
     </section>
+    <span id="back-to-top">↑</span>
   </main>
   <footer>
     <div>
