@@ -59,6 +59,7 @@ p {
 button {
   padding: 1rem;
   font-family: var(--main-font);
+  cursor: pointer;
   border: none;
   border-radius: 0.5rem;
   color: var(--light-color);
@@ -103,18 +104,76 @@ section {
 .project {
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: 0.6rem;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .project-img {
   width: 320px;
+  height: 200px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  padding: 1rem 3rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-arrows {
+  top: 50%;
+  position: absolute;
+  border: none;
+  font-size: 2rem;
+  color: var(--main-color);
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.card {
+  min-width: 320px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card a {
+  color: var(--light-color);
+  text-decoration: none;
 }
 
 footer {
