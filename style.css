@@ -209,6 +209,40 @@ section {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  height: 1.5rem;
+  padding: 1rem;
+  margin-top: .3rem;
+  font-family: var(--main-font);
+  border: none;
+  border-radius: .5rem;
+  color: var(--dark-color);
+  background-color: var(--second-color);
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid var(--main-color);
+}
+
+form textarea {
+  height: 200px;
+}
+
 footer {
   color: var(--light-color);
   background-color: var(--main-color);
