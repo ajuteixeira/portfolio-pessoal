@@ -1,9 +1,18 @@
+/* light theme */
 :root {
   --main-color: #7e459b;
   --second-color: #c1b6fc;
   --light-color: #fbfbfe;
   --dark-color: #242329;
   --main-font: 'Poppins', sans-serif;
+}
+
+/* dark theme */
+:root[data-theme="dark"] {
+  --main-color: #c1b6fc;
+  --second-color: #7e459b;
+  --light-color: #2b2b2b;
+  --dark-color: #fbfbfe;
 }
 
 * {
