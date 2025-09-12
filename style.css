@@ -138,7 +138,7 @@ section {
 
 .profile-container {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -154,6 +154,28 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.profile-links li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: color 0.3s;
+}
+
+.profile-links li a:hover {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: color 0.3s;
 }
 
 .carousel-container {
