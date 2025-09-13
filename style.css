@@ -3,15 +3,15 @@
   --main-color: #7e459b;
   --second-color: #c1b6fc;
   --light-color: #fbfbfe;
-  --dark-color: #242329;
+  --dark-color: #333333;
   --main-font: 'Poppins', sans-serif;
 }
 
 /* dark theme */
 :root[data-theme="dark"] {
-  --main-color: #c1b6fc;
-  --second-color: #7e459b;
-  --light-color: #2b2b2b;
+  --main-color: #7e459b;
+  --second-color: #c1b6fc;
+  --light-color: #191627;
   --dark-color: #fbfbfe;
 }
 
@@ -38,6 +38,7 @@ footer {
 main {
   width: 60%;
   padding-top: calc(1.5rem * 2 + 1rem);
+  color: var(--dark-color);
 }
 
 footer {
@@ -70,10 +71,12 @@ nav {
 
 h1 {
   font-size: 2.25rem;
+  color: var(--dark-color);
 }
 
 h2 {
   font-size: 1.5rem;
+  color: var(--dark-color);
 }
 
 h3 {
@@ -321,6 +324,10 @@ form button {
   width: 80%;
 }
 
+label {
+  color: var(--dark-color);
+}
+
 #back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -334,8 +341,4 @@ form button {
 footer {
   color: var(--light-color);
   background-color: var(--main-color);
-}
-
-footer a {
-  color: var(--light-color);
 }
