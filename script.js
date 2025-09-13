@@ -1,3 +1,17 @@
+const toggleBtn = document.getElementById('menu-toggle');
+const links = document.querySelector('.links');
+
+toggleBtn.addEventListener('click', () => {
+  links.classList.toggle('show');
+});
+
+// Fecha o menu ao clicar em um link
+document.querySelectorAll('.links a').forEach((link) => {
+  link.addEventListener('click', () => {
+    links.classList.remove('show');
+  });
+});
+
 const carousel = document.getElementById('carousel');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');

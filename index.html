@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   </style>
@@ -16,7 +16,13 @@
   <header>
     <nav>
       <span>Juliana_</span>
-      <div class="links">
+      <button id="menu-toggle" class="menu-toggle" aria-controls="nav-links" aria-expanded="false"
+        aria-label="Abrir menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="links" id="nav-links">
         <a href="#bio">Home</a>
         <a href="#profile">Sobre</a>
         <a href="#skills">Habilidades</a>
@@ -46,20 +52,25 @@
       </div>
       <div class="profile-container">
         <ul class="profile-links">
-          <li><a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <li>
+            <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
           </li>
-          <li><a href="https://dev.to/seuusuario" target="_blank"><i class="fab fa-dev"></i></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://dev.to/seuusuario" target="_blank"><i class="fab fa-dev"></i></a>
+          </li>
         </ul>
         <img class="profile-img" src="assets/about.jpg" alt="" />
         <div class="profile-info">
           <p>
-            Desenvolvedora Front-End com foco inicial em HTML5, CSS3, JavaScript e
-            React.js 💻
+            Desenvolvedora Front-End com foco inicial em HTML5, CSS3,
+            JavaScript e React.js 💻
           </p>
           <p>
-            Atualmente estudo desenvolvimento Front-End e curso
-            Análise e Des. de Sistemas na UNIFOR.
+            Atualmente estudo desenvolvimento Front-End e curso Análise e Des.
+            de Sistemas na UNIFOR.
           </p>
           <p>Conheça meu currículo e entre em contato :)</p>
           <button>Download CV ↓</button>
@@ -96,7 +107,9 @@
             <div class="project-info">
               <h3>Registro de visitantes MIS</h3>
               <p>Desenvolvido com React.js</p>
-              <button><a href="https://github.com/ajuteixeira/museu-registro-visitantes">Ver mais →</a></button>
+              <button>
+                <a href="https://github.com/ajuteixeira/museu-registro-visitantes">Ver mais →</a>
+              </button>
             </div>
           </div>
           <div class="card">
@@ -104,7 +117,9 @@
             <div class="project-info">
               <h3>Open Enterprise</h3>
               <p>Desenvolvido com React.js</p>
-              <button><a href="https://github.com/ajuteixeira/open-enterprise-lp">Ver mais →</a></button>
+              <button>
+                <a href="https://github.com/ajuteixeira/open-enterprise-lp">Ver mais →</a>
+              </button>
             </div>
           </div>
           <div class="card">
@@ -112,7 +127,9 @@
             <div class="project-info">
               <h3>Digital Store</h3>
               <p>Desenvolvido com React.js</p>
-              <button><a href="https://github.com/ajuteixeira/client-drip-store">Ver mais →</a></button>
+              <button>
+                <a href="https://github.com/ajuteixeira/client-drip-store">Ver mais →</a>
+              </button>
             </div>
           </div>
           <div class="card">
@@ -120,7 +137,9 @@
             <div class="project-info">
               <h3>Drivin</h3>
               <p>Desenvolvido com HTML, CSS e JS</p>
-              <button><a href="https://github.com/ajuteixeira/museu-registro-visitantes">Ver mais →</a></button>
+              <button>
+                <a href="https://github.com/ajuteixeira/museu-registro-visitantes">Ver mais →</a>
+              </button>
             </div>
           </div>
           <div class="card">
@@ -128,7 +147,9 @@
             <div class="project-info">
               <h3>Cine Tag</h3>
               <p>Desenvolvido com React.js</p>
-              <button><a href="https://github.com/ajuteixeira/cinetag">Ver mais →</a></button>
+              <button>
+                <a href="https://github.com/ajuteixeira/cinetag">Ver mais →</a>
+              </button>
             </div>
           </div>
           <div class="card">
@@ -136,7 +157,9 @@
             <div class="project-info">
               <h3>Meteora Store</h3>
               <p>Desenvolvido Bootstrap5</p>
-              <button><a href="https://github.com/ajuteixeira/meteora">Ver mais →</a></button>
+              <button>
+                <a href="https://github.com/ajuteixeira/meteora">Ver mais →</a>
+              </button>
             </div>
           </div>
         </div>
@@ -152,13 +175,14 @@
         <form action="https://getform.io/f/fddb3ee7-cc4e-4f2b-97a8-5d52a9267105" method="POST">
           <div>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required />
           </div>
           <div>
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required />
           </div>
-          <div><label for="mensagem">Mensagem:</label>
+          <div>
+            <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea>
           </div>
           <button type="submit">Enviar →</button>
@@ -173,8 +197,8 @@
         <h3>Juliana_</h3>
         <span>Desenvolvedora Front-End</span>
       </div>
-      <br>
-      <br>
+      <br />
+      <br />
     </div>
     <p>© Juliana Teixeira. Todos os direitos reservados.</p>
   </footer>
