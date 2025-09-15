@@ -367,17 +367,68 @@ footer {
   background-color: var(--main-color);
 }
 
+@media (max-width: 1024px) {
+  main {
+    width: 90%;
+    padding-top: 3rem;
+  }
+
+  .bio {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .bio-img {
+    width: 70%;
+    max-width: 350px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-links {
+    flex-direction: row;
+  }
+
+  .profile-img {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .profile-info {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-info {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  nav {
+    padding: 1rem 2rem;
+    width: 100vw;
+  }
+
+  .skills-info {
+    width: 80vw;
+  }
+
   .menu-toggle {
     display: flex;
   }
 
   .links {
+    flex-direction: column;
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
-
+    transition: max-height 0.3s ease, opacity 0.3s ease;
     position: absolute;
     top: 60px;
     left: 0;
@@ -385,22 +436,51 @@ footer {
     background: var(--light-color);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     border-radius: 0 0 12px 12px;
-    flex-direction: column;
     padding: 0;
     z-index: 100;
-    max-width: 100%;
-  }
-
-  .links a {
-    display: block;
-    padding: 0.75rem 1rem;
-    width: 100%;
-    box-sizing: border-box;
   }
 
   .links.show {
     max-height: 500px;
     opacity: 1;
     padding: 0.5rem 0;
+  }
+
+  .bio-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio-img {
+    display: none;
+  }
+
+  .skills-info {
+    gap: 1rem;
+  }
+
+  .carousel-container {
+    padding: 0 1rem;
+  }
+
+  .carousel {
+    gap: 1rem;
+  }
+
+  .card {
+    min-width: 80%;
+    height: auto;
+  }
+
+  .project-img {
+    height: auto;
+  }
+
+  form div {
+    width: 90%;
+  }
+
+  form button {
+    width: 90%;
   }
 }
