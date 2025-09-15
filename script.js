@@ -5,7 +5,6 @@ toggleBtn.addEventListener('click', () => {
   links.classList.toggle('show');
 });
 
-// Fecha o menu ao clicar em um link
 document.querySelectorAll('.links a').forEach((link) => {
   link.addEventListener('click', () => {
     links.classList.remove('show');
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   backToTop.addEventListener('click', function () {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // efeito suave
+      behavior: 'smooth',
     });
   });
 });
